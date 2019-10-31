@@ -1,0 +1,132 @@
+\documentclass{beamer}
+
+
+\title{Brancher Anyblok à 14 ans d'historique métier}
+\subtitle{Une sombre histoire de PHP, MySQL et MsSQL}
+\author{Jean-Sébastien SUZANNE et Hugo QUEZADA}
+
+\newcommand{\TwitterLogo}{\protect\includegraphics[height=
+1.7ex,keepaspectratio]{./twitter.png}}
+\newcommand{\EmailLogo}{\protect\includegraphics[height=
+1.7ex,keepaspectratio]{./email.png}}
+\newcommand{\AnyBlokLogo}{\protect\includegraphics[height=
+1.7ex,keepaspectratio]{./anyblok.png}}
+
+\usetheme{Amsterdam}
+\begin{document}
+	\frame {
+		\titlepage
+	}
+	
+	\frame {
+		\frametitle{Qui sommes nous ?}
+		
+		\begin{columns}
+            \begin{column}{3cm}
+                Logo Sensee
+			\end{column}
+			\begin{column}{3cm}
+				Logo LMC
+			\end{column}
+		\end{columns}
+			
+		\hfill \break			
+		\begin{columns}
+            \begin{column}{5cm}
+                \textbf{\AnyBlokLogo{} Sébastien Suzanne}
+		    	\begin{itemize}
+			  		\item Connu aussi sous le speudo de PAPABLOK
+			  		\item \TwitterLogo{} @jssuzanne
+			    	\item \EmailLogo{} js.suzanne@sensee.com
+		    	\end{itemize}
+			\end{column}
+			\begin{column}{5cm}
+				\textbf{Hugo Quezada}
+		    	\begin{itemize}
+			  		\item Dis le petit Basque du Chili
+			  		\item \TwitterLogo{} @jssuzanne
+			    	\item \EmailLogo{} h.quezada@sensee.com
+		    	\end{itemize}
+			\end{column}
+		\end{columns}
+	}
+	
+	\frame{
+		\frametitle{L'éxistant}
+		\framesubtitle{14 ans de code...}
+		\begin{itemize}
+			\item Code légacy en PHP5 (pas de troll SVP) 
+			\item  Écosytème comportant plusieurs Sgbd sans API (MySQL, MsSQL)
+			\item  Schémas de bdd multiples
+			\item  Pas de tests
+			\item  Pas de CI
+			\item  Beaucoup de développeurs et peu d'historique écrit
+			\item  pas d'ORM 
+		\end{itemize}
+	}
+	
+	\frame{
+		\frametitle{Projet éxistant}
+		\framesubtitle{Une architecture découpé}
+		\setlength{\unitlength}{1mm}
+		\begin{picture}(0,0)
+			\put(40,20){\framebox(20,10){Front}}
+			\put(40, 0){\framebox(20,10){MySQL}}
+			\put(50,20){\line(0,-1){10}}
+			\put(00, -20){\framebox(20,10){Backend}}
+			\put(50, 00){\line(-2,-1){30}}
+			\put(80,-20){\framebox(40,10){Tâche asynchrones}}
+			\put(50, 00){\line(2,-1){30}}
+			\put(0,-40){\framebox(20,10){MsSQL :( }}
+			\put(10, -20){\line(0,-1){10}}
+		\end{picture}
+	}	
+	\frame{
+		\frametitle{Vision final du projet}
+		\framesubtitle{Objectif}
+		\begin{itemize}
+		    \item Un code python propre et testé
+			\item Une API simple et uniforme, utilisé dans tous nos projets
+			\item Une application plus proche des standards actuels
+			\item Un projet plus séduisant et plus attrayant pour des potentiels futurs développeurs 
+		\end{itemize}
+	}
+	\frame{
+		\frametitle{Vision final du projet}
+		\framesubtitle{Stratégie}
+		\begin{itemize}
+		    \item reprise des tables en étant plus explicite sur les noms des colonnes avec AnyBlok
+			\item TDD
+			\item Strangler pattern
+		\end{itemize}
+	}
+	\frame{
+		\frametitle{Stratégie}
+		\framesubtitle{Strangler pattern}
+		
+		Définition du pattern
+		
+		\begin{itemize}
+			\item Diminue le risque 
+			\item petite équipe (de 1)
+			\item permet de faire cohabiter les 2 versions
+		\end{itemize}
+	}
+	\frame{
+		\frametitle{Stratégie}
+		\framesubtitle{Anyblok: Présentation}
+	}
+	\frame{
+		\frametitle{Stratégie}
+		\framesubtitle{Anyblok: Écrire des tests pour notre Model}
+	}
+	\frame{
+		\frametitle{Stratégie}
+		\framesubtitle{Anyblok: Définir le Model}
+	}
+	\frame{
+		\frametitle{Stratégie}
+		\framesubtitle{Anyblok: Définir Model sur une table existante}
+	}
+		
+\end{document}
