@@ -141,76 +141,64 @@
 		
 		\pause
 		\begin{itemize}
-			\item 2 semaines de travails
-			\item beaucoup de recherche et d'incompréhension 
+			\item Deux semaines de travail
+			\item Beaucoup de recherches et d'incompréhensions 
 		\end{itemize}
 	}	
 	\frame{
 		\frametitle{Evolutions et intégrations dans AnyBlok}
-		\framesubtitle{Compatibilité avec MySQL: Les tests unitaires}
+		\framesubtitle{Compatibilité avec MySQL : Les tests unitaires}
 		
 		\begin{itemize}
-			\item Mise a jour de configuration travis-ci
+			\item Mise à jour de la configuration Travis-CI
 			\item \pause Activer le mode transactionnel de innoDB
 			\item \pause {\color{blue}\href{https://dev.mysql.com/doc/refman/8.0/en/implicit-commit.html}{Les commits implicites}}
 		\end{itemize}
 	}	
 	\frame{
 		\frametitle{Evolutions et intégrations dans AnyBlok}
-		\framesubtitle{Compatibilité avec MySQL: Limitation}
+		\framesubtitle{Compatibilité avec MySQL : Limitations}
 		
 		\begin{itemize}
 			\item Pas de Python 3.5
-			\item \pause Pas de CheckConstrainte et autre containte exclusive a PostgrSQL
-			\item \pause Datetime naives
-			\item \pause Pas de chiffrement sur les columns UUID
-			\item \pause Pas de véritable Boolean
+			\item \pause Pas de CheckConstraint et autre contrainte exclusive à PostgreSQL
+			\item \pause Datetime naïves
+			\item \pause Pas de chiffrement sur les colonnes de type UUID
+			\item \pause Pas de véritable Booléen
 		\end{itemize}
 	}	
 	\frame{
 		\frametitle{Evolutions et intégrations dans AnyBlok}
-		\framesubtitle{Compatibilité avec MariaDB}
+		\framesubtitle{Compatibilité avec MariaDB : Limitations }
 		
 		\begin{itemize}
 			\item Pas de Python 3.5
-			\item Pas de CheckConstrainte et autre containte exclusive a PostgrSQL
-			\item Datetime naives
-			\item Pas de chiffrement sur les columns UUID
-			\item Pas de véritable Boolean
-			\item \pause taille des clé primaires plus petite
+			\item Pas de CheckConstraint et autre contrainte exclusive à PostgreSQL
+			\item Datetime naïves
+			\item Pas de chiffrement sur les colonnes UUID
+			\item Pas de véritable Booléen
+			\item \pause Taille des clés primaires plus petite
 			\item \pause Pas de colonnes JSON
 		\end{itemize}
 	}
 	\frame{
-		\frametitle{Evolutions et intégrations dans AnyBlok}
-		\framesubtitle{Compatibilité avec MsSQL}
+		\frametitle{Évolutions et intégrations dans AnyBlok}
+		\framesubtitle{Compatibilité avec MsSQL : Limitations}
 		
 		\begin{itemize}
 			\item Pas de Python 3.5
-			\item Pas de CheckConstrainte et autre containte exclusive a PostgrSQL
-			\item \pause lent
+			\item Pas de CheckConstraint et autre contrainte exclusive à PostgreSQL
+			\item \pause Lent... Très très lent...
 		\end{itemize}
 	}
 	\frame{
-		\frametitle{Evolutions et intégrations dans AnyBlok}
+		\frametitle{Évolutions et intégrations dans AnyBlok}
 		\framesubtitle{Définition de schémas}
-		Choix
 		\begin{itemize}
-			\item c'est dans la reprise de donnée
-			\item Programmatique ou Configuration
+			\item Programmatique ou par configuration
 			\item Poser sur un modèle ou un namespace
 			\item Ajout de suffixes ou préfixes pour les tests
 		\end{itemize}
-		\hfill \linebreak
-		Problématiques
-		\begin{itemize}
-			\item génération de foreign key
-			\item migration
-		\end{itemize}
-	}
-	\frame{
-	exemple programatique
-	exemple configuration
 	}
 	\frame{
 		\frametitle{Fin}
