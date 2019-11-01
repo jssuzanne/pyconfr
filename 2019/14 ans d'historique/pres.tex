@@ -12,6 +12,9 @@
 \newcommand{\AnyBlokLogo}{\protect\includegraphics[height=
 1.7ex,keepaspectratio]{./anyblok.png}}
 
+\usepackage{hyperref}
+\usepackage{color}
+
 \usetheme{Amsterdam}
 \begin{document}
 	\frame {
@@ -23,14 +26,18 @@
 		
 		\begin{columns}
             \begin{column}{3cm}
-                Logo Sensee
+                \begin{figure}
+  					\includegraphics[width=\linewidth]{logosensee-carre.jpg}
+  					\label{fig:sensee}
+				\end{figure}
 			\end{column}
 			\begin{column}{3cm}
-				Logo LMC
+				\begin{figure}
+  					\includegraphics[width=\linewidth]{lentillesmoinscheres-mobile.png}
+  					\label{fig:lmc}
+				\end{figure}
 			\end{column}
-		\end{columns}
-			
-		\hfill \break			
+		\end{columns} 			
 		\begin{columns}
             \begin{column}{5cm}
                 \textbf{\AnyBlokLogo{} Sébastien Suzanne}
@@ -130,13 +137,58 @@
 	}
 	\frame{
 		\frametitle{Evolutions et intégrations dans AnyBlok}
-		\framesubtitle{Compatibilité avec plusieurs SGBD}
+		\framesubtitle{Compatibilité avec MySQL}
+		
+		\pause
 		\begin{itemize}
-			\item Commits implicites pour les tests unitaires
-			\item Datetime sans time zone
-			\item Contraintes exclusives à PostgreSQL
-			\item Options par défaut pour MySQL (innodb, mode transactionnel)
-			\item Cas des champs JSON
+			\item 2 semaines de travails
+			\item beaucoup de recherche et d'incompréhension 
+		\end{itemize}
+	}	
+	\frame{
+		\frametitle{Evolutions et intégrations dans AnyBlok}
+		\framesubtitle{Compatibilité avec MySQL: Les tests unitaires}
+		
+		\begin{itemize}
+			\item Mise a jour de configuration travis-ci
+			\item \pause Activer le mode transactionnel de innoDB
+			\item \pause {\color{blue}\href{https://dev.mysql.com/doc/refman/8.0/en/implicit-commit.html}{Les commits implicites}}
+		\end{itemize}
+	}	
+	\frame{
+		\frametitle{Evolutions et intégrations dans AnyBlok}
+		\framesubtitle{Compatibilité avec MySQL: Limitation}
+		
+		\begin{itemize}
+			\item Pas de Python 3.5
+			\item \pause Pas de CheckConstrainte et autre containte exclusive a PostgrSQL
+			\item \pause Datetime naives
+			\item \pause Pas de chiffrement sur les columns UUID
+			\item \pause Pas de véritable Boolean
+		\end{itemize}
+	}	
+	\frame{
+		\frametitle{Evolutions et intégrations dans AnyBlok}
+		\framesubtitle{Compatibilité avec MariaDB}
+		
+		\begin{itemize}
+			\item Pas de Python 3.5
+			\item Pas de CheckConstrainte et autre containte exclusive a PostgrSQL
+			\item Datetime naives
+			\item Pas de chiffrement sur les columns UUID
+			\item Pas de véritable Boolean
+			\item \pause taille des clé primaires plus petite
+			\item \pause Pas de colonnes JSON
+		\end{itemize}
+	}
+	\frame{
+		\frametitle{Evolutions et intégrations dans AnyBlok}
+		\framesubtitle{Compatibilité avec MsSQL}
+		
+		\begin{itemize}
+			\item Pas de Python 3.5
+			\item Pas de CheckConstrainte et autre containte exclusive a PostgrSQL
+			\item \pause lent
 		\end{itemize}
 	}
 	\frame{
@@ -144,10 +196,9 @@
 		\framesubtitle{Définition de schémas par modèle ou par namespace}
 		\begin{itemize}
 			\item Apporter plus de cohérence avec la BdD.
-			\item Utilisation de suffixes ou préfixes pour les schémas
-			\begin{itemize}
-				\item Initialisation de schémas vides pour lancer les tests unitaires.
-			\end{itemize}
+			\item Programmatique ou Configuration
+			\item Poser sur un modèle ou un namespace
+			\item Ajout de suffixes ou préfixes pour les tests
 		\end{itemize}
 	}
 	\frame{
