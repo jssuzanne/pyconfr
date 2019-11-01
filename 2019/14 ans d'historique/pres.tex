@@ -114,10 +114,30 @@
 	\frame{
 		\frametitle{Pourquoi avoir choisi AnyBlok ?}
 		\framesubtitle{AnyBlok: Présentation}
+		\begin{itemize}
+		\item Python 3.6 et plus
+		\item MPL2
+		\item PyPi
+		\item Modulaire
+		\item Dépendances fiables (SQLAlchemy, Alembic, ...)
+		\item Possibilité de reprendre une base existante.
+		\end{itemize}
+	}
+	\frame{
+		\frametitle{Pourquoi avoir choisi AnyBlok ?}
+		\framesubtitle{AnyBlok: Documentation}
+		\begin{itemize}
+		\item https://anyblok.gitbooks.io/anyblok-book/content/en/
+		\item doc.anyblok.org
+		\item https://github.com/AnyBlok
+		\item https://gitter.im/AnyBlok/community
+		\end{itemize}
 	}
 	\frame{
 		\frametitle{Pourquoi avoir choisi AnyBlok ?}
 		\framesubtitle{AnyBlok: Écrire des tests pour notre Model}
+
+
 	}
 	\frame{
 		\frametitle{Pourquoi avoir choisi AnyBlok ?}
@@ -130,10 +150,6 @@
 	\frame{
 		\frametitle{Pourquoi avoir choisi AnyBlok ?}
 		\framesubtitle{AnyBlok: Créer API web et tests unitaires associés}
-	}
-	\frame{
-		\frametitle{Pourquoi avoir choisi AnyBlok ?}
-		\framesubtitle{AnyBlok: Créer un console script dédié par service}
 	}
 	\frame{
 		\frametitle{Evolutions et intégrations dans AnyBlok}
@@ -151,8 +167,8 @@
 		
 		\begin{itemize}
 			\item Mise a jour de configuration travis-ci
-			\item \pause Activer le mode transactionnel de innoDB
-			\item \pause {\color{blue}\href{https://dev.mysql.com/doc/refman/8.0/en/implicit-commit.html}{Les commits implicites}}
+			\item Activer le mode transactionnel de innoDB
+			\item {\color{blue}\href{https://dev.mysql.com/doc/refman/8.0/en/implicit-commit.html}{Les commits implicites}}
 		\end{itemize}
 	}	
 	\frame{
@@ -161,10 +177,10 @@
 		
 		\begin{itemize}
 			\item Pas de Python 3.5
-			\item \pause Pas de CheckConstrainte et autre containte exclusive a PostgrSQL
-			\item \pause Datetime naives
-			\item \pause Pas de chiffrement sur les columns UUID
-			\item \pause Pas de véritable Boolean
+			\item Pas de CheckConstrainte et autre containte exclusive a PostgrSQL
+			\item Datetime naives
+			\item Pas de chiffrement sur les columns UUID
+			\item Pas de véritable Boolean
 		\end{itemize}
 	}	
 	\frame{
@@ -178,7 +194,7 @@
 			\item Pas de chiffrement sur les columns UUID
 			\item Pas de véritable Boolean
 			\item \pause taille des clé primaires plus petite
-			\item \pause Pas de colonnes JSON
+			\item Pas de colonnes JSON
 		\end{itemize}
 	}
 	\frame{
@@ -202,7 +218,7 @@
 			\item Ajout de suffixes ou préfixes pour les tests
 		\end{itemize}
 		\hfill \linebreak
-		Problématiques
+		\pause Problématiques
 		\begin{itemize}
 			\item génération de foreign key
 			\item migration
@@ -211,6 +227,10 @@
 	\frame{
 	exemple programatique
 	exemple configuration
+	}
+	\frame{
+		\frametitle{Interface Graphique}
+		\framesubtitle{FuretUI}
 	}
 	\frame{
 		\frametitle{Fin}
