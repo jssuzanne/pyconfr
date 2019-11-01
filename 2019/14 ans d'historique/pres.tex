@@ -1,9 +1,9 @@
 \documentclass{beamer}
 
-
-\title{Brancher Anyblok à 14 ans d'historique métier}
-\subtitle{Une sombre histoire de PHP, MySQL et MsSQL}
+\title{Brancher AnyBlok à 14 ans d'historique métier}
+\subtitle{Une histoire terrifiante de PHP, MySQL et MsSQL}
 \author{Jean-Sébastien SUZANNE et Hugo QUEZADA}
+\date{2 novembre 2019}
 
 \newcommand{\TwitterLogo}{\protect\includegraphics[height=
 1.7ex,keepaspectratio]{./twitter.png}}
@@ -35,7 +35,7 @@
             \begin{column}{5cm}
                 \textbf{\AnyBlokLogo{} Sébastien Suzanne}
 		    	\begin{itemize}
-			  		\item Connu aussi sous le speudo de PAPABLOK
+			  		\item Répond aussi au nom de PAPABLOK
 			  		\item \TwitterLogo{} @jssuzanne
 			    	\item \EmailLogo{} js.suzanne@sensee.com
 		    	\end{itemize}
@@ -44,7 +44,7 @@
 				\textbf{Hugo Quezada}
 		    	\begin{itemize}
 			  		\item Dis le petit Basque du Chili
-			  		\item \TwitterLogo{} @jssuzanne
+			  		\break
 			    	\item \EmailLogo{} h.quezada@sensee.com
 		    	\end{itemize}
 			\end{column}
@@ -52,38 +52,39 @@
 	}
 	
 	\frame{
-		\frametitle{L'éxistant}
+		\frametitle{Existant}
 		\framesubtitle{14 ans de code...}
 		\begin{itemize}
-			\item Code légacy en PHP5 (pas de troll SVP) 
-			\item  Écosytème comportant plusieurs Sgbd sans API (MySQL, MsSQL)
-			\item  Schémas de bdd multiples
-			\item  Pas de tests
-			\item  Pas de CI
-			\item  Beaucoup de développeurs et peu d'historique écrit
-			\item  pas d'ORM 
+			\pause
+			\item Code legacy en PHP5 (pas de troll SVP)
+			\item Pas de framework, beaucoup de code, très peu d'objet
+			\break
+			\pause
+			\item Pas de tests
+			\item Pas de CI
+			\break
+			\pause
+			\item Pas d'ORM
 		\end{itemize}
 	}
 	
 	\frame{
-		\frametitle{Projet éxistant}
-		\framesubtitle{Une architecture découpé}
-		\setlength{\unitlength}{1mm}
-		\begin{picture}(0,0)
-			\put(40,20){\framebox(20,10){Front}}
-			\put(40, 0){\framebox(20,10){MySQL}}
-			\put(50,20){\line(0,-1){10}}
-			\put(00, -20){\framebox(20,10){Backend}}
-			\put(50, 00){\line(-2,-1){30}}
-			\put(80,-20){\framebox(40,10){Tâche asynchrones}}
-			\put(50, 00){\line(2,-1){30}}
-			\put(0,-40){\framebox(20,10){MsSQL :( }}
-			\put(10, -20){\line(0,-1){10}}
-		\end{picture}
-	}	
+		\frametitle{Existant}
+		\framesubtitle{Une BdD un peu complexe...}
+		\begin{itemize}
+			\item  Schémas de base de données multiples
+			\pause
+			\item  Écosystème avec plusieurs SGBD (MySQL, MsSQL) souvent sans API
+			\begin{figure}[p]
+				\includegraphics[height=25ex,keepaspectratio]{./schema_simplifie_lmc.png}
+				\caption{Schéma simplifié}
+			\end{figure}
+		\end{itemize}
+	}
+	
 	\frame{
-		\frametitle{Vision final du projet}
-		\framesubtitle{Objectif}
+		\frametitle{Vision finale}
+		\framesubtitle{L'objectif}
 		\begin{itemize}
 		    \item Un code python propre et testé
 			\item Une API simple et uniforme, utilisé dans tous nos projets
@@ -92,41 +93,74 @@
 		\end{itemize}
 	}
 	\frame{
-		\frametitle{Vision final du projet}
-		\framesubtitle{Stratégie}
+		\frametitle{Vision finale}
+		\framesubtitle{La stratégie}
 		\begin{itemize}
-		    \item reprise des tables en étant plus explicite sur les noms des colonnes avec AnyBlok
-			\item TDD
-			\item Strangler pattern
+			\item Modèle d'étranglement (Strangle pattern)
+			\begin{figure}[p]
+				\includegraphics[height=15ex,keepaspectratio]{./strangler.png}
+			\end{figure}
+			\item Mapping des tables avec un nommage plus clair
+			\item Développement piloté par les tests (TDD)
 		\end{itemize}
 	}
 	\frame{
-		\frametitle{Stratégie}
-		\framesubtitle{Strangler pattern}
-		
-		Définition du pattern
-		
+		\frametitle{Pourquoi avoir choisi AnyBlok ?}
+		\framesubtitle{AnyBlok: Présentation}
+	}
+	\frame{
+		\frametitle{Pourquoi avoir choisi AnyBlok ?}
+		\framesubtitle{AnyBlok: Écrire des tests pour notre Model}
+	}
+	\frame{
+		\frametitle{Pourquoi avoir choisi AnyBlok ?}
+		\framesubtitle{AnyBlok: Définir le Model}
+	}
+	\frame{
+		\frametitle{Pourquoi avoir choisi AnyBlok ?}
+		\framesubtitle{AnyBlok: Définir un Model sur une table existante}
+	}
+	\frame{
+		\frametitle{Pourquoi avoir choisi AnyBlok ?}
+		\framesubtitle{AnyBlok: Créer API web et tests unitaires associés}
+	}
+	\frame{
+		\frametitle{Pourquoi avoir choisi AnyBlok ?}
+		\framesubtitle{AnyBlok: Créer un console script dédié par service}
+	}
+	\frame{
+		\frametitle{Evolutions et intégrations dans AnyBlok}
+		\framesubtitle{Compatibilité avec plusieurs SGBD}
 		\begin{itemize}
-			\item Diminue le risque 
-			\item petite équipe (de 1)
-			\item permet de faire cohabiter les 2 versions
+			\item Commits implicites pour les tests unitaires
+			\item Datetime sans time zone
+			\item Contraintes exclusives à PostgreSQL
+			\item Options par défaut pour MySQL (innodb, mode transactionnel)
+			\item Cas des champs JSON
 		\end{itemize}
 	}
 	\frame{
-		\frametitle{Stratégie}
-		\framesubtitle{Anyblok: Présentation}
+		\frametitle{Evolutions et intégrations dans AnyBlok}
+		\framesubtitle{Définition de schémas par modèle ou par namespace}
+		\begin{itemize}
+			\item Apporter plus de cohérence avec la BdD.
+			\item Utilisation de suffixes ou préfixes pour les schémas
+			\begin{itemize}
+				\item Initialisation de schémas vides pour lancer les tests unitaires.
+			\end{itemize}
+		\end{itemize}
 	}
 	\frame{
-		\frametitle{Stratégie}
-		\framesubtitle{Anyblok: Écrire des tests pour notre Model}
-	}
-	\frame{
-		\frametitle{Stratégie}
-		\framesubtitle{Anyblok: Définir le Model}
-	}
-	\frame{
-		\frametitle{Stratégie}
-		\framesubtitle{Anyblok: Définir Model sur une table existante}
+		\frametitle{Fin}
+		\begin{columns}
+			\begin{column}{4cm}
+			\end{column}
+			\begin{column}{8cm}
+				Des questions ? 
+				\break
+				Des remarques ?
+			\end{column}
+		\end{columns}
 	}
 		
 \end{document}
