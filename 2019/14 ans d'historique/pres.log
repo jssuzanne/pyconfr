@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.8.2)  2 NOV 2019 10:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.8.2)  2 NOV 2019 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -976,27 +976,35 @@ Package pdftex.def Info: api.png  used on input line 173.
 <schema.png, id=766, 634.37pt x 209.78375pt>
 File: schema.png Graphic file (type png)
 <use schema.png>
-Package pdftex.def Info: schema.png  used on input line 255.
+Package pdftex.def Info: schema.png  used on input line 260.
 (pdftex.def)             Requested size: 307.28987pt x 101.62334pt.
- [28
+<schema2.png, id=767, 707.64375pt x 72.27pt>
+File: schema2.png Graphic file (type png)
+<use schema2.png>
+Package pdftex.def Info: schema2.png  used on input line 260.
+(pdftex.def)             Requested size: 307.28987pt x 31.38315pt.
 
- <./schema.png>]
-<exemple_furetui_produits.png, id=796, 1433.355pt x 237.13594pt>
+Overfull \vbox (5.5958pt too high) detected at line 260
+ []
+
+[28
+
+ <./schema.png> <./schema2.png>]
+<exemple_furetui_produits.png, id=799, 1433.355pt x 237.13594pt>
 File: exemple_furetui_produits.png Graphic file (type png)
 <use exemple_furetui_produits.png>
-Package pdftex.def Info: exemple_furetui_produits.png  used on input line 264.
+Package pdftex.def Info: exemple_furetui_produits.png  used on input line 269.
 (pdftex.def)             Requested size: 307.28987pt x 50.83849pt.
  [29
 
  <./exemple_furetui_produits.png (PNG copy)>]
-<exemple_furetui_produits_page.png, id=824, 1434.86063pt x 659.46375pt>
+<exemple_furetui_produits_page.png, id=827, 1434.86063pt x 659.46375pt>
 File: exemple_furetui_produits_page.png Graphic file (type png)
 <use exemple_furetui_produits_page.png>
 Package pdftex.def Info: exemple_furetui_produits_page.png  used on input line 
-272.
+277.
 (pdftex.def)             Requested size: 307.28987pt x 141.22849pt.
-
-[30
+ [30
 
  <./exemple_furetui_produits_page.png (PNG copy)>] [31
 
@@ -1012,11 +1020,12 @@ Package pdftex.def Info: exemple_furetui_produits_page.png  used on input line
 \tf@snm=\write8
 \openout8 = `pres.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
- (./pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
+
+(./pres.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
 Package rerunfilecheck Info: File `pres.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1025,10 +1034,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17267 strings out of 494518
- 329312 string characters out of 6176314
- 404496 words of memory out of 5000000
- 20461 multiletter control sequences out of 15000+600000
+ 17274 strings out of 494518
+ 329447 string characters out of 6176314
+ 404521 words of memory out of 5000000
+ 20466 multiletter control sequences out of 15000+600000
  11163 words of font info for 41 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  48i,15n,51p,771b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1038,10 +1047,10 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on pres.pdf (32 pages, 984699 bytes).
+Output written on pres.pdf (32 pages, 990151 bytes).
 PDF statistics:
- 943 PDF objects out of 1000 (max. 8388607)
- 861 compressed objects within 9 object streams
- 75 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 946 PDF objects out of 1000 (max. 8388607)
+ 862 compressed objects within 9 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
