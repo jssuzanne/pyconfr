@@ -62,14 +62,15 @@ import pytest
 @pytest.mark.usefixtures('rollback_registry')
 class TestApiProduct:
 
-    def test_addresses_post(self, rollback_registry, webserver):
-        response = webserver.post_json('/api/v1/lmc/products',
-                                       [{'code': 'C1', 'label': 'My product'}])
+    def test_api_products_post(self, rollback_registry, webserver):
+        response = webserver.post_json(
+            '/api/v1/lmc/products',
+            [{'code': 'C1', 'label': 'My product'}])
         assert response.status_code == 200
         assert response.json_body[0].get('code') == 'C1'
         assert rollback_registry.LMC.Product.query().filter_by(code='C1').one()
 
-    def test_addresses_get(self, rollback_registry, webserver):
+    def test_api_products_get(self, rollback_registry, webserver):
         """Address GET /api/v1/addresses"""
         rollback_registry.LMC.Product.insert(
             code="C1", label="My product")
