@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.8.2)  2 NOV 2019 10:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.8.2)  2 NOV 2019 11:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1010,6 +1010,8 @@ Package pdftex.def Info: exemple_furetui_produits_page.png  used on input line
 
 ] [32
 
+] [33
+
 ]
 \tf@nav=\write6
 \openout6 = `pres.nav'.
@@ -1020,12 +1022,12 @@ Package pdftex.def Info: exemple_furetui_produits_page.png  used on input line
 \tf@snm=\write8
 \openout8 = `pres.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
 
 (./pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
 Package rerunfilecheck Info: File `pres.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1034,23 +1036,24 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17274 strings out of 494518
- 329447 string characters out of 6176314
+ 17280 strings out of 494518
+ 329506 string characters out of 6176314
  404521 words of memory out of 5000000
- 20466 multiletter control sequences out of 15000+600000
- 11163 words of font info for 41 fonts, out of 8000000 for 9000
+ 20469 multiletter control sequences out of 15000+600000
+ 11469 words of font info for 42 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  48i,15n,51p,771b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on pres.pdf (32 pages, 990151 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on pres.pdf (33 pages, 999293 bytes).
 PDF statistics:
- 946 PDF objects out of 1000 (max. 8388607)
- 862 compressed objects within 9 object streams
- 76 named destinations out of 1000 (max. 500000)
+ 976 PDF objects out of 1000 (max. 8388607)
+ 890 compressed objects within 9 object streams
+ 78 named destinations out of 1000 (max. 500000)
  128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
