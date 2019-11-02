@@ -50,34 +50,50 @@
 			\begin{column}{5cm}
 				\textbf{Hugo Quezada}
 		    	\begin{itemize}
-			  		\item Dis le petit Basque du Chili
+			  		\item Répond seulement au nom de Hugo
 			  		\break
 			    	\item \EmailLogo{} h.quezada@sensee.com
 		    	\end{itemize}
 			\end{column}
 		\end{columns}
 	}
-	
 	\frame{
-		\frametitle{Existant}
-		\framesubtitle{14 ans de code...}
+		\begin{center}
+			{\color{anyblok}\huge{Existant}}
+		\end{center}
+		\begin{center}
+			\includegraphics[width=10ex]{php.jpeg}
+			\includegraphics[width=10ex]{mysql.png}
+			\includegraphics[width=10ex]{mssql.jpeg}
+		\end{center}
+	}
+	\frame{
+		\frametitle{14 ans de code...}
+		\framesubtitle{Existant}
 		\begin{itemize}
-			\pause
 			\item Code legacy en PHP5 (pas de troll SVP)
 			\item Pas de framework, beaucoup de code, très peu d'objet
 			\break
 			\pause
-			\item Pas de tests
-			\item Pas de CI
-			\break
-			\pause
-			\item Pas d'ORM
+			\begin{columns}
+				\begin{column}{4cm}
+					\item Pas de tests
+					\item Pas de CI
+					\break
+					\pause
+					\item Pas d'ORM
+				\end{column}
+				\begin{column}{3.5cm}
+					\pause
+					\includegraphics[width=20ex]{crying_trollface.jpeg}
+				\end{column}
+			\end{columns}
 		\end{itemize}
 	}
 	
 	\frame{
-		\frametitle{Existant}
-		\framesubtitle{Une BdD un peu complexe...}
+		\frametitle{Une BdD un peu complexe...}
+		\framesubtitle{Existant}
 		\begin{itemize}
 			\item  Schémas de base de données multiples
 			\pause
@@ -88,10 +104,21 @@
 			\end{figure}
 		\end{itemize}
 	}
-	
 	\frame{
-		\frametitle{Vision finale}
-		\framesubtitle{L'objectif}
+		\begin{center}
+			{\color{anyblok}\huge{Vision finale}}
+		\end{center}
+		\begin{center}
+			\includegraphics[width=10ex]{python.png}
+			\includegraphics[width=10ex]{anyblok.png}
+			\includegraphics[width=10ex]{sqlalchemy.png}
+			\includegraphics[width=10ex]{pyramid.png}
+		\end{center}
+
+	}
+	\frame{
+		\frametitle{L'objectif}
+		\framesubtitle{Vision finale}
 		\begin{itemize}
 		    \item Un code python propre et testé
 			\item Une API simple et uniforme, utilisé dans tous nos projets
@@ -100,8 +127,8 @@
 		\end{itemize}
 	}
 	\frame{
-		\frametitle{Vision finale}
-		\framesubtitle{La stratégie}
+		\frametitle{La stratégie}
+		\framesubtitle{Vision finale}
 		\begin{itemize}
 			\item Modèle d'étranglement (Strangle pattern)
 			\begin{figure}[p]
@@ -112,8 +139,16 @@
 		\end{itemize}
 	}
 	\frame{
-		\frametitle{Pourquoi avoir choisi AnyBlok ?}
-		\framesubtitle{AnyBlok: Présentation}
+		\begin{center}
+			{\color{anyblok}\huge{Pourquoi avoir choisi AnyBlok ?}}
+		\end{center}
+		\begin{center}
+			\includegraphics[width=10ex]{anyblok.png}
+		\end{center}
+	}
+	\frame{
+		\frametitle{AnyBlok: Présentation}
+		\framesubtitle{Pourquoi avoir choisi AnyBlok ?}
 		\begin{itemize}
 		\item Python 3.6 et plus
 		\item MPL2
@@ -124,68 +159,69 @@
 		\end{itemize}
 	}
 	\frame{
-		\frametitle{Pourquoi avoir choisi AnyBlok ?}
-		\framesubtitle{AnyBlok: Structure}
+		\frametitle{AnyBlok: Structure}
+		\framesubtitle{Pourquoi avoir choisi AnyBlok ?}
 		\begin{figure}
   			\includegraphics[height=42ex,keepaspectratio]{bloks_dependencies.png}
   			\label{fig:test unitaire}
 		\end{figure}
 	}
 	\frame{
-		\frametitle{Pourquoi avoir choisi AnyBlok ?}
-		\framesubtitle{AnyBlok: Écrire des tests pour notre Model}
+		\frametitle{AnyBlok: Écrire des tests pour notre Model}
+		\framesubtitle{Pourquoi avoir choisi AnyBlok ?}
 		\begin{figure}
   			\includegraphics[width=\linewidth]{testU.png}
   			\label{fig:test unitaire}
 		\end{figure}
 	}
 	\frame{
-		\frametitle{Pourquoi avoir choisi AnyBlok ?}
-		\framesubtitle{AnyBlok: Définir le Model}
+		\frametitle{AnyBlok: Définir le Model}
+		\framesubtitle{Pourquoi avoir choisi AnyBlok ?}
 		\begin{figure}
   			\includegraphics[width=\linewidth]{model1.png}
   			\label{fig:Model 1}
 		\end{figure}
 	}
 	\frame{
-		\frametitle{Pourquoi avoir choisi AnyBlok ?}
-		\framesubtitle{AnyBlok: Définir un Model sur une table existante}
+		\frametitle{AnyBlok: Définir un Model sur une table existante}
+		\framesubtitle{Pourquoi avoir choisi AnyBlok ?}
 		\begin{figure}
   			\includegraphics[width=\linewidth]{model2.png}
   			\label{fig:Model 2}
 		\end{figure}
 	}
-		\frame{
-		\frametitle{Pourquoi avoir choisi AnyBlok ?}
-		\framesubtitle{AnyBlok: Écrire des tests pour notre L'API}
+	\frame{
+		\frametitle{AnyBlok: Écrire des tests pour notre API}
+		\framesubtitle{Pourquoi avoir choisi AnyBlok ?}
 		\begin{figure}
   			\includegraphics[width=\linewidth]{apitestU.png}
   			\label{fig:test unitaire API}
 		\end{figure}
 	}
 	\frame{
-		\frametitle{Pourquoi avoir choisi AnyBlok ?}
-		\framesubtitle{AnyBlok: Écrire une API rest}
+		\frametitle{AnyBlok: Écrire une API REST}
+		\framesubtitle{Pourquoi avoir choisi AnyBlok ?}
 		\begin{figure}
   			\includegraphics[width=\linewidth]{api.png}
   			\label{fig: API}
 		\end{figure}
 	}
-	
 	\frame{
-		\frametitle{Evolutions et intégrations dans AnyBlok}
-		\framesubtitle{Compatibilité avec MySQL}
-		
-		\pause
+		\begin{center}
+			{\color{anyblok}\huge{Évolutions et intégrations dans AnyBlok}}
+		\end{center}
+	}
+	\frame{
+		\frametitle{Compatibilité avec MySQL}
+		\framesubtitle{Évolutions et intégrations dans AnyBlok}
 		\begin{itemize}
 			\item Deux semaines de travail
 			\item Beaucoup de recherches et d'incompréhensions 
 		\end{itemize}
 	}	
 	\frame{
-		\frametitle{Evolutions et intégrations dans AnyBlok}
-		\framesubtitle{Compatibilité avec MySQL : Les tests unitaires}
-		
+		\frametitle{Compatibilité avec MySQL : Les tests unitaires}
+		\framesubtitle{Évolutions et intégrations dans AnyBlok}
 		\begin{itemize}
 			\item Mise à jour de la configuration Travis-CI
 			\item Activer le mode transactionnel de innoDB
@@ -193,9 +229,8 @@
 		\end{itemize}
 	}	
 	\frame{
-		\frametitle{Evolutions et intégrations dans AnyBlok}
-		\framesubtitle{Compatibilité avec MySQL : Limitations}
-		
+		\frametitle{Compatibilité avec MySQL : Limitations}
+		\framesubtitle{Évolutions et intégrations dans AnyBlok}
 		\begin{itemize}
 			\item Pas de Python 3.5
 			\item Pas de CheckConstraint et autre contrainte exclusive à PostgreSQL
@@ -205,9 +240,8 @@
 		\end{itemize}
 	}	
 	\frame{
-		\frametitle{Evolutions et intégrations dans AnyBlok}
-		\framesubtitle{Compatibilité avec MariaDB : Limitations }
-		
+		\frametitle{Compatibilité avec MariaDB : Limitations }
+		\framesubtitle{Évolutions et intégrations dans AnyBlok}
 		\begin{itemize}
 			\item Pas de Python 3.5
 			\item Pas de CheckConstraint et autre contrainte exclusive à PostgreSQL
@@ -219,9 +253,8 @@
 		\end{itemize}
 	}
 	\frame{
-		\frametitle{Évolutions et intégrations dans AnyBlok}
-		\framesubtitle{Compatibilité avec MsSQL : Limitations}
-		
+		\frametitle{Compatibilité avec MsSQL : Limitations}
+		\framesubtitle{Évolutions et intégrations dans AnyBlok}
 		\begin{itemize}
 			\item Pas de Python 3.5
 			\item Pas de CheckConstraint et autre contrainte exclusive à PostgreSQL
@@ -229,35 +262,40 @@
 		\end{itemize}
 	}
 	\frame{
-		\frametitle{Évolutions et intégrations dans AnyBlok}
-		\framesubtitle{Définition de schémas}
-		Choix
+		\frametitle{Définition de schémas}
+		\framesubtitle{Évolutions et intégrations dans AnyBlok}
+		Choix :
 		\begin{itemize}
 			\item Programmatique ou par configuration
 			\item Poser sur un modèle ou un namespace
 			\item Ajout de suffixes ou préfixes pour les tests
 		\end{itemize}
 		\hfill \linebreak
-		\pause Problématiques
+		\pause Problématiques :
 		\begin{itemize}
 			\item Génération de foreign key
 			\item Migration
 		\end{itemize}
 	}
 	\frame{
-		\frametitle{Évolutions et intégrations dans AnyBlok}
-		\framesubtitle{Ajouter un schéma à un Model}
-		Dans Le Model
+		\frametitle{Lier un Model à un schéma}
+		\framesubtitle{Évolutions et intégrations dans AnyBlok}
+		Dans le Model :
 		\begin{figure}
   			\includegraphics[width=\linewidth]{schema.png}
   			\label{fig:Model avec un schema}
 		\end{figure}
-		Par la configuration
+		Par la configuration :
 		\begin{figure}
   			\includegraphics[width=\linewidth]{schema2.png}
   			\label{fig:Schema depuis la conf}
 		\end{figure}
 	
+	}
+	\frame{
+		\begin{center}
+			\includegraphics[height=42ex,keepaspectratio]{logo-furetui.png}
+		\end{center}
 	}
 	\frame{
 		\frametitle{Interface Graphique}
@@ -287,20 +325,13 @@
 		\end{itemize}
 	}
 	\frame{
-		\frametitle{Fin}
-		\begin{columns}
-			\begin{column}{4cm}
-			\end{column}
-			\begin{column}{8cm}
-				Des questions ? 
-				\break
-				Des remarques ?
-			\end{column}
-		\end{columns}
+		\begin{center}
+			{\color{anyblok}\huge{MERCI !}}
+		\end{center}
 	}
-		\frame{
-		\frametitle{Fin}
-		{\color{anyblok}\huge{Plop}}
+	\frame{
+		\begin{center}
+			{\color{anyblok}\huge{Avez-vous des questions ?}}
+		\end{center}
 	}
-		
 \end{document}
